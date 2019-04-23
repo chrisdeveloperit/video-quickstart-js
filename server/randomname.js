@@ -1,24 +1,23 @@
 'use strict';
 
 var ADJECTIVES = [
-  'Abrasive', 'Brash', 'Callous', 'Daft', 'Eccentric', 'Fiesty', 'Golden',
-  'Holy', 'Ignominious', 'Joltin', 'Killer', 'Luscious', 'Mushy', 'Nasty',
-  'OldSchool', 'Pompous', 'Quiet', 'Rowdy', 'Sneaky', 'Tawdry',
-  'Unique', 'Vivacious', 'Wicked', 'Xenophobic', 'Yawning', 'Zesty'
+  'Daft', 'Eccentric', 'Fiesty', 'Golden',
+  'OldSchool', 'Pompous', 'Quiet', 'Rowdy', 'Sneaky',
+  'Unique', 'Yawning'
 ];
 
 var FIRST_NAMES = [
   'Anna', 'Bobby', 'Cameron', 'Danny', 'Emmett', 'Frida', 'Gracie', 'Hannah',
-  'Isaac', 'Jenova', 'Kendra', 'Lando', 'Mufasa', 'Nate', 'Owen', 'Penny',
-  'Quincy', 'Roddy', 'Samantha', 'Tammy', 'Ulysses', 'Victoria', 'Wendy',
+  'Isaac', 'Jenova', 'Kendra', 'Lando', 'Nate', 'Owen', 'Penny',
+  'Quincy', 'Roddy', 'Samantha', 'Tammy', 'Victoria', 'Wendy',
   'Xander', 'Yolanda', 'Zelda'
 ];
 
 var LAST_NAMES = [
-  'Anchorage', 'Berlin', 'Cucamonga', 'Davenport', 'Essex', 'Fresno',
-  'Gunsight', 'Hanover', 'Indianapolis', 'Jamestown', 'Kane', 'Liberty',
-  'Minneapolis', 'Nevis', 'Oakland', 'Portland', 'Quantico', 'Raleigh',
-  'SaintPaul', 'Tulsa', 'Utica', 'Vail', 'Warsaw', 'XiaoJin', 'Yale',
+  'Berlin', 'Davenport', 'Essex', 'Brown', 'Chapman',
+  'Hanover', 'Jamestown', 'Kane',
+  'Minneapolis', 'Nevis', 'Oakland', 'Portland',
+  'Tulsa', 'Utica', 'Vail', 'Yale',
   'Zimmerman'
 ];
 
