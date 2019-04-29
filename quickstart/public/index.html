@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
@@ -24,5 +24,697 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <base href="https://mdev.singletouchpoint.com" />
+    <link rel="icon" type="image/png" href="/Content/images/SingleTouch-192.png" sizes="192x192" />
+    <link rel="shortcut icon" type="image/png" href="/Content/images/SingleTouch-192.png" />
+
+    <link rel="stylesheet" href="/Content/w3.css?20190429162507" />
+
+    <title>VIDEO CHAT - STPT</title>
+    <link href="/stpt_deploy/Content/css?v=8E5Rbb5f73wAcjsM3N3kcSTIFktbeHRE3RAUIj6rSsA1" rel="stylesheet"/>
+
+
+    <link href="/Content/site.css?20190429162507" rel="stylesheet" />
+
+    <script src="/stpt_deploy/bundles/jquery?v=rD9yxcIfC-_zwpaJ_9UPbUY1Niam5dFE8OFiugxkBeM1"></script>
+
+
+    <script src="/stpt_deploy/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+
+    <script defer src="/Scripts/custom.js?20190429162507"></script>
+
+    <script> var site = "https://videos.singletouchpoint.com"; </script>
+</head>
+<body>
+    <div id="bodyPanel"> <!-- was id="content" -->
+
+            <div id="topNav" class="headingBorder">
+<div id="hdrBorder" class="rounded-border-white alignFlxHVCenterWrap">
+    <div id="LandscapeLeftPanel"></div>
+    <div id="hdrMainText">
+        <h3 class="text-center">VIDEO CHAT</h3>
+    </div>
+
+</div>
+
+<div class="pointer top-absolute-left" onclick="javascript:history.back()"><i class="glyphicon glyphicon-backward btnFwdBakNav"></i></div>
+<div class="pointer top-absolute-right" onclick="javascript:history.forward()"><i class="glyphicon glyphicon-forward btnFwdBakNav"></i></div>
+</div>
+<div id="tplSectionDivider" class="mt110 msgboxLtSectionDivider"></div>            
+
+<div class="iav-content">
+    <input id="room-name" type="hidden" value="StptAdjuster-28031" />              
+<div class="alignFlxCenter">
+<div id="remote-media" class="vidChatDemo itmContainer">
+    <div id="local-media"></div>
+    <div class="itmContainer">
+        <div class="vidChatCamSwitch btnPulse" onclick=""></div>
+    </div>
+    <div class="itmContainer">
+        <div class="VidChatAudio btnPulse" onclick=""></div>
+    </div>
+    <div class="itmContainer">
+        <div class="vidChatSplitView btnPulse" onclick=""></div>
+    </div>
+    <div class="alignFlxCenter">
+        <div class="VidChatInVidMsgBox">
+            <div class="itmContainer">
+                <div class="alignFlxCenter btnPulse" onclick="">
+                    <div class="VidChatInVidProfile"></div>
+                    <div class="VidChatInVidText">
+                        <h4>ADJUSTER</h4>
+                        <h4>Press the MESSAGE button below to enter MESSAGE VIEW.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="alignFlxCenter mt10">
+<div class="itmContainer">
+    <div class="VidChatScrShareBtn btnPulse" onclick="">
+        <div class="VidChatScrShare"></div>
+        <div class="VidChatScrShareTxt alignTextCenter">SHARE SCREEN</div>
+    </div>
+</div>
+<div class="itmContainer ml14">
+    <button class="btn btnMd btnMainAction custCamSwitchBtn btnPulse" onclick=""><h4>SWITCH TO<br />REAR CAMERA</h4></button>
+</div>
+<div class="itmContainer ml14">
+    <div class="VidChatScrShotBtn btnPulse" onclick="">
+        <div class="VidChatScrShot"></div>
+        <div class="VidChatScrShotTxt alignTextCenter">SCREEN CAPTURE</div>
+    </div>
+</div>
+</div>
+<div class="alignFlxCenter mt60">
+<div class="itmContainer custBtnDivWidth alignFlxColCenter">
+    <div id="button-join" class="VidChatVidCamBtn btnPulse" onclick="">
+        <div class="VidChatVidCam"></div>
+    </div>
+    <div class="VidChatVidCamTxt alignTextCenter">START<br />VIDEO</div>
+</div>
+<div class="itmContainer custBtnDivWidth alignFlxColCenter">
+    <div class="VidChatMicBtn btnPulse" onclick="">
+        <div class="VidChatMic"></div>
+    </div>
+    <div class="VidChatMicTxt">MUTE</div>
+</div>
+<div class="itmContainer custBtnDivWidth alignFlxColCenter">
+    <div class="VidChatVidCamBtn btnPulse" onclick="">
+        <div class="VidChatVidCam"></div>
+    </div>
+    <div class="VidChatVidCamTxt alignTextCenter">CAMERA<br />OFF</div>
+</div>
+<div class="itmContainer custBtnDivWidth alignFlxColCenter">
+    <div class="VidChatMsgBtn btnPulse" onclick="">
+        <div class="VidChatMsg"></div>
+    </div>
+    <div class="VidChatMsgTxt alignTextCenter">MESSAGE</div>
+    <div class="VidChatMsgNotifBbl alignTextCenter"><div class="VidChatMsgNotifTxt">1</div></div>
+</div>
+<div class="itmContainer custBtnDivWidth alignFlxColCenter">
+    <div id="button-leave" class="VidChatEndBtn btnPulse" onclick="">
+        <div class="VidChatEnd"></div>
+    </div>
+    <div class="VidChatEndTxt alignTextCenter">END CHAT</div>
+</div>
+</div>
+<div class="bottomArea"></div>
+
+     </div>
+
+  </div>
+    
+<!-- This link opens the bottom Admin Nav, used in development and testing -->
+<a href="javascript:;" style="display: none;" id="openNav" class="openNav" onclick="openNav()"><i class="glyphicon glyphicon-chevron-down"></i></a>
+
+<div id="myBottomnav" class="bottomnav">
+<a href="javascript:;" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="javascript:;" onclick="jsGoto('/home/index')" class="text-uppercase" title="Home">Home</a>
+<a href="javascript:;" onclick="jsGoto('/home/cart3')" class="text-uppercase" title="Insurance Store">Store</a>
+<a href="javascript:;" onclick="jsGoto('/home/quote')" class="text-uppercase" title="Quote Page">Quote</a>
+<a id="videolink" href="https://videos.singletouchpoint.com/quickstart/" target="_blank" class="text-uppercase">Video Call</a>
+<a href="javascript:;" onclick="jsGoto('/payment/wallet')" class="text-uppercase" title="Wallet">Wallet</a>
+<a href="javascript:;" onclick="jsGoto('/property/documents')" class="text-uppercase" title="Documents">Documents</a>
+<a href="javascript:;" onclick="jsGoto('/homemenu/main')" class="text-uppercase" title="ClaimsPross">Home Menu</a>
+<a href="javascript:;" onclick="jsGoto('/property/addphotos/1')" class="text-uppercase" title="Add Photos">Add Photos</a>
+<a href="javascript:;" onclick="jsGoto('/property/claims')" class="text-uppercase">File Claim</a>
+<a href="javascript:;" onclick="jsGoto('/property/furnitureMenu')" class="text-uppercase">Furniture</a>
+<a href="javascript:;" onclick="jsGoto('/property/claimspross/14')" class="text-uppercase">Rental Info</a>
+<a href="javascript:;" onclick="jsGoto('/property/claimspross/15')" class="text-uppercase">Rental Summary</a>
+<a href="javascript:;" onclick="jsGoto('/property/propcontents/3')" class="text-uppercase">IAV Summary</a>
+<a href="javascript:;" onclick="jsGoto('/AllState/html/aos.html')" class="text-uppercase">All State</a>
+
+<a href="javascript:;" onclick="logout()" class="text-uppercase logout" title="Logout">Logout</a>
+</div> 
+<!-- MODIFY VIDEO CALL LINK FOR SAFARI BROWSERS  -->
+<script>
+var ua = navigator.userAgent.toLowerCase();
+
+var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+// console.log('USERAGENT',navigator.userAgent);
+if (is_safari) {
+    console.log('SAFARI');
+    $('#videolink').attr('href', 'https://videos.singletouchpoint.com/quickstart/');
+}
+else {
+  //  $('#videolink').attr("onclick", "jsGoto('https://videos.singletouchpoint.com/quickstart/')");
+    $('#videolink').attr('href', 'https://videos.singletouchpoint.com/quickstart/');
+}
+
+function openVideoWin() {
+    nwindow = window.open('https://videos.singletouchpoint.com/quickstart/', '_blank', 'location=yes,height=450,width=320,scrollbars=yes,status=yes');
+}
+
+function closeVideoWin() {
+    nwindow.close();
+}
+
+</script>
+
+
+    <script src="/stpt_deploy/bundles/bootstrap?v=OLkGsbbfZ8BtU01-L_8FX_7AdN8ut1qtNc6uojJgOGQ1"></script>
+
+
+
+<style>
+
+    body {
+        background-color: var(--bkgLightNeutral); /* was clrHeaderBorder2, clrBorderLtNeutral */
+    }
+
+    .vidChatDemo {
+        background-image: url('/Content/images/VideoChat-Video-Demo-2019-0329.png');
+        background-size: cover;
+        background-position: right 0px bottom -44px;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+    }
+
+    .vidChatCamSwitch {
+        background-image: url('/Content/images/VideoChat-CameraSwitch-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 84px;
+        left: 304px;
+    }
+
+    .vidChatSplitView {
+        background-image: url('/Content/images/VideoChat-SplitView-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 488px;
+        left: 304px;
+        display: none;
+    }
+
+    .VidChatAudio {
+        background-image: url('/Content/images/VideoChat-Audio-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 430px;
+        left: 304px;
+        display: none;
+    }
+
+    .VidChatInVidMsgBox {
+        background-color: var(--clrHeaderBorder2);
+        width: 240px;
+        height: 70px;
+        border-radius: 6px;
+        margin-top: 322px;
+        display: none;
+    }
+
+    .VidChatInVidProfile {
+        background-image: url('/Content/images/VideoChat-InVidMsg-Profile-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        margin-top: 4px;
+        margin-left: 4px;
+    }
+
+    .VidChatInVidText {
+        margin-top: 8px;
+        margin-left: 8px;
+        width: 166px;
+    }
+
+        .VidChatInVidText > h4 {
+            margin: 0px;
+            font-size: 13px;
+        }
+
+    .VidChatScrShareBtn, .VidChatScrShotBtn {
+        background-color: var(--clrBtnPressedNeutral);
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+    }
+
+    .VidChatScrShare {
+        background-image: url('/Content/images/VideoChat-ScreenShare-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+    }
+
+    .VidChatScrShareTxt {
+        font-size: 13px;
+        color: var(--clrTxtHeader1);
+        margin-top: 2px;
+    }
+
+    .custCamSwitchBtn {
+        width: 220px;
+        height: 50px;
+    }
+
+    .VidChatScrShotBtn {
+        padding: 4px;
+    }
+
+    .VidChatScrShot {
+        background-image: url('/Content/images/VideoChat-ScreenShot-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 42px;
+        height: 42px;
+    }
+
+    .VidChatScrShotTxt {
+        font-size: 13px;
+        color: var(--clrTxtHeader1);
+        margin-top: 4px;
+        width: 62px;
+        margin-left: -8px;
+    }
+
+    .custBtnDivWidth {
+        width: 25%;
+    }
+
+    .VidChatMic {
+        background-image: url('/Content/images/VideoChat-Mic-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    .VidChatMicBtn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--clrBrand);
+        padding-top: 8px;
+        padding-left: 10px;
+    }
+
+    .VidChatMicTxt {
+        font-size: 13px;
+        color: var(--clrTxtHeader1);
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .VidChatVidCam {
+        background-image: url('/Content/images/VideoChat-VidCam-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    .VidChatVidCamBtn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--clrBrand);
+        padding-top: 9px;
+        padding-left: 11px;
+    }
+
+    .VidChatVidCamTxt {
+        font-size: 13px;
+        color: var(--clrTxtHeader1);
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .VidChatMsg {
+        background-image: url('/Content/images/VideoChat-Message-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    .VidChatMsgBtn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--clrBrand);
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .VidChatMsgTxt {
+        font-size: 13px;
+        color: var(--clrTxtHeader1);
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .VidChatMsgNotifBbl {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--clrNotify1);
+        top: -14px;
+        right: 18px;
+        padding-top: 3px;
+    }
+
+    .VidChatMsgNotifTxt {
+        font-size: 14px;
+        color: var(--bkgLight);
+    }
+
+    .VidChatEnd {
+        background-image: url('/Content/images/VideoChat-Close-Icon-FFFFFF.png');
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+
+    .VidChatEndBtn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--clrClose1);
+        padding-top: 14px;
+        padding-left: 14px;
+    }
+
+    .VidChatEndTxt {
+        font-size: 13px;
+        color: var(--clrTxtHeader1);
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .bottomArea {
+        width: 100%;
+        height: 18vh;
+    }
+
+    /* Override iav-content ...not used on this page, for sure */
+    .iav-content {
+        min-height: 0px;
+        top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: block;
+    }
+
+
+    /* iPhone 5/SE Portrait (568 * 0.37 = 210) */
+    @media only screen and (min-device-height: 568px) and (orientation: portrait) {
+        .vidChatDemo {
+            background-position: right 0px bottom -180px;
+            width: 70%;
+            height: 166px;
+        }
+
+        .vidChatCamSwitch {
+            top: 46px;
+            left: 175px;
+        }
+
+        .VidChatInVidMsgBox {
+            width: 198px;
+            margin-top: 92px;
+            margin-left: -64px;
+        }
+
+        .VidChatInVidProfile {
+            width: 40px;
+            height: 40px;
+        }
+
+        .VidChatInVidText {
+            width: 150px;
+        }
+
+            .VidChatInVidText h4 {
+                font-size: 11px;
+            }
+
+        .VidChatAudio {
+            top: 92px;
+            left: 188px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .vidChatSplitView {
+            top: 132px;
+            left: 188px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .custCamSwitchBtn {
+            width: 164px;
+        }
+
+        .mt60 {
+            margin-top: 36px;
+        }
+    }
+
+    /* Displays like Galaxy S5 (640 * 0.37 = 237) */
+    @media only screen and (min-device-height: 569px) and (orientation: portrait) {
+        .vidChatDemo {
+            background-position: right 0px bottom -160px;
+            width: 70%;
+            height: 230px;
+        }
+
+        .vidChatCamSwitch {
+            top: 56px;
+            left: 198px;
+        }
+
+        .VidChatInVidMsgBox {
+            margin-top: 92px;
+            margin-left: 0px;
+        }
+
+        .VidChatInVidText h4 {
+            font-size: 13px;
+        }
+
+        .VidChatAudio {
+            width: 50px;
+            height: 50px;
+            top: 172px;
+            left: 132px;
+        }
+
+        .vidChatSplitView {
+            width: 50px;
+            height: 50px;
+            top: 172px;
+            left: 194px;
+        }
+
+        .custCamSwitchBtn {
+            width: 192px;
+        }
+
+        .mt60 {
+            margin-top: 45px;
+        }
+
+    }
+
+    /* iPhone 6/7/8 Portrait (667 * 0.37 = 247) (667 * 0.38 = 253) */
+    @media only screen and (min-device-height: 667px) and (orientation: portrait) {
+        .vidChatDemo {
+            background-position: right 0px bottom -204px;
+            width: 80%;
+            height: 262px;
+        }
+
+        .vidChatCamSwitch {
+            top: 74px;
+            left: 239px;
+        }
+
+        .VidChatAudio {
+            top: 142px;
+            left: 243px;
+        }
+
+        .vidChatSplitView {
+            top: 204px;
+            left: 243px;
+        }
+
+        .VidChatInVidMsgBox {
+            width: 176px;
+            margin-top: 188px;
+        }
+
+        .VidChatInVidText {
+            width: 124px;
+        }
+
+            .VidChatInVidText h4 {
+                font-size: 12px;
+            }
+
+        .custCamSwitchBtn {
+            width: 204px;
+        }
+
+        .mt60 {
+            margin-top: 60px;
+        }
+    }
+
+    /* iPhone 6/7/8 Plus & Pixel 2 Portrait (731 * 0.37 = 270) (731 * 0.38 = 278) */
+    @media only screen and (min-device-height: 731px) and (orientation: portrait) {
+        .vidChatDemo {
+            background-position: right 0px bottom -204px;
+            width: 82%;
+            height: 327px;
+        }
+
+        .vidChatCamSwitch {
+            top: 90px;
+            left: 274px;
+        }
+
+        .custCamSwitchBtn {
+            width: 230px;
+        }
+
+        .VidChatAudio {
+            top: 210px;
+            left: 282px;
+        }
+
+        .vidChatSplitView {
+            top: 268px;
+            left: 282px;
+        }
+
+        .VidChatInVidMsgBox {
+            width: 176px;
+            margin-top: 249px;
+        }
+
+    }
+
+    /* iPhone X & Pixel 2 XL Portrait (812 * 0.37 = 270) (812 * 0.38 = 309) */
+    @media only screen and (min-device-height: 812px) and (orientation: portrait) {
+
+        .custCamSwitchBtn {
+            width: 204px;
+        }
+
+        .vidChatDemo {
+            background-position: right 0px bottom -182px;
+            width: 100%;
+            height: 400px;
+        }
+
+        .vidChatCamSwitch {
+            top: 104px;
+            left: 304px;
+        }
+
+        .VidChatAudio {
+            top: 282px;
+            left: 316px;
+        }
+
+        .vidChatSplitView {
+            top: 342px;
+            left: 316px;
+        }
+
+        .VidChatInVidMsgBox {
+            width: 226px;
+            margin-top: 316px;
+        }
+
+        .VidChatInVidText {
+            width: 140px;
+        }
+
+            .VidChatInVidText h4 {
+                font-size: 13px;
+            }
+
+        .VidChatInVidProfile {
+            width: 60px;
+            height: 60px;
+        }
+
+    }
+
+    /* Dev Mode */
+    @media only screen and (min-device-height: 824px) and (orientation: portrait) {
+        body {
+            max-width: 380px;
+        }
+
+        .vidChatDemo {
+            background-position: right 0px bottom -164px;
+        }
+
+        .vidChatCamSwitch {
+            top: 96px;
+            left: 294px;
+        }
+
+        .VidChatAudio {
+            top: 282px;
+            left: 308px;
+        }
+
+        .vidChatSplitView {
+            top: 342px;
+            left: 308px;
+        }
+
+        .VidChatInVidMsgBox {
+            margin-top: 302px;
+        }
+    }
+</style>
+
+<script src="https://videos.singletouchpoint.com/quickstart/index.js"></script>
 </body>
 </html>

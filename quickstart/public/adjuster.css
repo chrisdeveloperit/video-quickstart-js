@@ -3,35 +3,41 @@
 body,
 p {
     padding: 0;
-    margin: 0;
+    
 }
 
-body {
-    background: #e8f6fe;
+html {
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #efefef;
+    padding-bottom: 1em;
 }
 
 div#remote-media {
-    height: 43%;
+    height: 60%;
+    max-height: 60vh;
     width: 100%;
     background-color: #fff;
+    border: solid 1em #556a94;
     text-align: center;
     margin: auto;
 }
 
     div#remote-media video {
-        border: 1px solid #ccc;
-        margin: 3em 2em;
-        height: 70%;
+        position: relative;
+        border: 2px solid #ccc;
+        margin: 0.5em 1em;
+        height: 50%;
+        max-height: 50vh !important;
         max-width: 50% !important;
         background-color: #cdeaf8;
         background-repeat: no-repeat;
     }
 
 div#controls {
-    padding: 3em;
+    padding: 1em;
     max-width: 1200px;
     margin: 0 auto;
-    border: solid 4px #4e5e7d;
 }
 
     div#controls div {
@@ -124,12 +130,12 @@ div#controls {
                 display: none;
             }
 
-    div#controls div#log {
+    div#log {
         width: 80%;
         height: 3.0em;
-        margin-top: 2.50em;
+        margin-top: 1em;
         text-align: left;
-        padding: 1.5em;
+        padding: 1.4em;
         overflow-y: scroll;
     }
 

@@ -7,10 +7,8 @@ var ADJECTIVES = [
 ];
 
 var FIRST_NAMES = [
-  'Anna', 'Bobby', 'Cameron', 'Danny', 'Emmett', 'Frida', 'Gracie', 'Hannah',
-  'Isaac', 'Jenova', 'Kendra', 'Lando', 'Nate', 'Owen', 'Penny',
-  'Quincy', 'Roddy', 'Samantha', 'Tammy', 'Victoria', 'Wendy',
-  'Xander', 'Yolanda', 'Zelda'
+  'Anna', 'Bobby', 'Cameron', 'Chris', 'Danny', 'Emmett', 'Frida', 'Gracie', 'Hannah',
+  'Isaac', 'Kendra', 'Lando', 'Nate', 'Owen', 'Penny'
 ];
 
 var LAST_NAMES = [
@@ -27,7 +25,6 @@ function randomItem(array) {
 }
 
 module.exports = function randomName() {
-  return randomItem(ADJECTIVES) +
-    randomItem(FIRST_NAMES) +
-    randomItem(LAST_NAMES);
+  return  randomItem(FIRST_NAMES) +     //randomItem(ADJECTIVES) +
+  randomItem(LAST_NAMES);
 };
