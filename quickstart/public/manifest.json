@@ -4,9 +4,9 @@
   "description": "This app provides all the info you need about your home insurance in one place, and gives quick access to your Insurance Adjuster.",
   "orientation": "portrait",
   "background_color": "#f1f1f1",
-  "scope": "/",
+  "scope": "https://videos.singletouchpoint.com/quickstart/",
   "display": "browser",
-  "start_url": "https://mdev.singletouchpoint.com/home/splash",
+  "start_url": "https://videos.singletouchpoint.com/quickstart/",
   "theme_color": "#e1e1e1",
   "icons": [
     {
