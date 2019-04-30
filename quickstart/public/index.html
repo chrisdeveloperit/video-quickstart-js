@@ -17,7 +17,7 @@
     <p class="instructions">Room Name:</p>
     <input id="room-name" type="text" value="StptAdjuster-28031"  />
     <button id="button-join">Join Room</button>
-    <button c>Leave Room</button>
+    <button id="button-leave">Leave Room</button>
   </div>
   <div id="log"></div>
 </div>
@@ -32,7 +32,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <!-- <meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
     <base href="https://mdev.singletouchpoint.com" />
     <link rel="icon" type="image/png" href="/Content/images/SingleTouch-192.png" sizes="192x192" />
     <link rel="shortcut icon" type="image/png" href="/Content/images/SingleTouch-192.png" />
@@ -53,7 +54,8 @@
 
     <script defer src="/Scripts/custom.js?20190429162507"></script>
 
-    <link rel="stylesheet" href="https://videos.singletouchpoint.com/quickstart/index.css" />
+    <!-- <link rel="stylesheet" href="https://videos.singletouchpoint.com/quickstart/index.css" /> -->
+    <link rel="stylesheet" href="http://localhost:3000/quickstart/index.css" />
 </head>
 <body>
     <div id="bodyPanel"> <!-- was id="content" -->
@@ -232,6 +234,7 @@ function closeVideoWin() {
         position: absolute;
         top: 84px;
         left: 304px;
+        display: none;
     }
 
     .vidChatSplitView {
@@ -455,7 +458,7 @@ function closeVideoWin() {
         display: block;
     }
 
-
+    .vidChatDemo { background: #666;}
     /* iPhone 5/SE Portrait (568 * 0.37 = 210) */
     @media only screen and (min-device-height: 568px) and (orientation: portrait) {
         .vidChatDemo {
