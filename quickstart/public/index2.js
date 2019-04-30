@@ -35394,7 +35394,7 @@ window.addEventListener('beforeunload', leaveRoomIfJoined);
 var baseurl = "https://videos.singletouchpoint.com";
 $.getJSON(baseurl + '/token', function(data) {
   identity = data.identity;
-  document.getElementById('room-controls').style.display = 'block';
+ // document.getElementById('room-controls').style.display = 'block';
 
   // Bind button to join Room.
   document.getElementById('button-join').onclick = function() {
@@ -35492,22 +35492,22 @@ function roomJoined(room) {
 }
 
 // Preview LocalParticipant's Tracks.
-document.getElementById('button-preview').onclick = function() {
-  var localTracksPromise = previewTracks
-    ? Promise.resolve(previewTracks)
-    : Video.createLocalTracks();
+// document.getElementById('button-preview').onclick = function() {
+//   var localTracksPromise = previewTracks
+//     ? Promise.resolve(previewTracks)
+//     : Video.createLocalTracks();
 
-  localTracksPromise.then(function(tracks) {
-    window.previewTracks = previewTracks = tracks;
-    var previewContainer = document.getElementById('local-media');
-    if (!previewContainer.querySelector('video')) {
-      attachTracks(tracks, previewContainer);
-    }
-  }, function(error) {
-    console.error('Unable to access local media', error);
-    log('Unable to access Camera and Microphone');
-  });
-};
+//   localTracksPromise.then(function(tracks) {
+//     window.previewTracks = previewTracks = tracks;
+//     var previewContainer = document.getElementById('local-media');
+//     if (!previewContainer.querySelector('video')) {
+//       attachTracks(tracks, previewContainer);
+//     }
+//   }, function(error) {
+//     console.error('Unable to access local media', error);
+//     log('Unable to access Camera and Microphone');
+//   });
+// };
 
 // Activity log.
 function log(message) {

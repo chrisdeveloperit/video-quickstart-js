@@ -17,7 +17,7 @@
     <p class="instructions">Room Name:</p>
     <input id="room-name" type="text" value="StptAdjuster-28031"  />
     <button id="button-join">Join Room</button>
-    <button id="button-leave">Leave Room</button>
+    <button c>Leave Room</button>
   </div>
   <div id="log"></div>
 </div>
@@ -53,7 +53,7 @@
 
     <script defer src="/Scripts/custom.js?20190429162507"></script>
 
-    <script> var site = "https://videos.singletouchpoint.com"; </script>
+    <link rel="stylesheet" href="https://videos.singletouchpoint.com/quickstart/index.css" />
 </head>
 <body>
     <div id="bodyPanel"> <!-- was id="content" -->
@@ -145,13 +145,15 @@
     <div class="VidChatMsgNotifBbl alignTextCenter"><div class="VidChatMsgNotifTxt">1</div></div>
 </div>
 <div class="itmContainer custBtnDivWidth alignFlxColCenter">
-    <div id="button-leave" class="VidChatEndBtn btnPulse" onclick="">
+    <div id="button-leave" class="VidChatEndBtn btnPulse">
         <div class="VidChatEnd"></div>
     </div>
     <div class="VidChatEndTxt alignTextCenter">END CHAT</div>
 </div>
 </div>
-<div class="bottomArea"></div>
+<div class="bottomArea">
+    <div id="log"></div>
+</div>
 
      </div>
 
@@ -204,10 +206,7 @@ function closeVideoWin() {
 
 </script>
 
-
-    <script src="/stpt_deploy/bundles/bootstrap?v=OLkGsbbfZ8BtU01-L_8FX_7AdN8ut1qtNc6uojJgOGQ1"></script>
-
-
+<script src="/stpt_deploy/bundles/bootstrap?v=OLkGsbbfZ8BtU01-L_8FX_7AdN8ut1qtNc6uojJgOGQ1"></script>
 
 <style>
 
@@ -715,6 +714,6 @@ function closeVideoWin() {
     }
 </style>
 
-<script src="https://videos.singletouchpoint.com/quickstart/index2.js"></script>
+<script src="http://localhost:3000/quickstart/index2.js"></script>
 </body>
 </html>
