@@ -135,11 +135,11 @@ div#controls {
 
     #log {
         width: 80%;
-        height: 2.0em;
+        height: 2.5em;
         margin: 1em auto;
         text-align: left;
         padding: 0.5em;
-        border: 2px solid #686865;
+        border: 1px solid #686865;
         overflow-y: scroll;
         background: #e1e1e1;
     }
@@ -147,7 +147,7 @@ div#controls {
 
     #log p {
         color: #686865;
-        font-family: 'Share Tech Mono', 'Courier New', Courier;
+        font-family: 'Courier New', Courier;
         font-size: 80%;
         line-height: 1;
         margin-left: 1em;
