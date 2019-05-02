@@ -28,8 +28,8 @@ body {
 } */
 
 #remote-media video { 
-    max-width: 85vw;
-    max-height: 85vw;
+    max-width: 95vw;
+    max-height: 95vw;
 }
 
 div#controls {
