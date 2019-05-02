@@ -29,7 +29,7 @@ body {
 #remote-media {
     overflow: hidden;
 }
-#remote-media video{ 
+#remote-media > video{ 
   min-width: 100%; 
   min-height: 100%; 
   border: solid 2px #ccc;
@@ -44,12 +44,11 @@ body {
   transform: translate(-50%,-50%);
 }
 
-#local-media video { 
+#local-media > video { 
     min-width: 100%; 
     min-height: 100%; 
     border: solid 2px #ccc;
-    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
+
     /* Center the video */
     position: absolute;
     top: 50%;
