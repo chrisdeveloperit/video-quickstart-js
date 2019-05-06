@@ -2,7 +2,6 @@
   "short_name": "SingleTouchPoint",
   "name": "Single Touch Point Tech",
   "description": "This app provides all the info you need about your home insurance in one place, and gives quick access to your Insurance Adjuster.",
-  "orientation": "portrait",
   "background_color": "#f1f1f1",
   "scope": "https://videos.singletouchpoint.com/quickstart/",
   "display": "browser",
